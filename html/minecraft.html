@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Team Shadows - Esports</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .navbar-dark .navbar-brand {
+            color: #ffffff;
+        }
+
+        .hero-section {
+            background-size: cover;
+            background-position: center;
+            height: 30vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-section h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .team-logo {
+            width: 200px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Team Shadows</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#partners">Partners</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Minecraft</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="text-center">
+            <h1>Minecraft</h1>
+        </div>
+    </section>
+
+    <!-- Conection Section -->
+
+    <div class="container">
+        <div class="section-title">
+            <h2>Conexión</h2>
+        </div>
+        <div class="p-5 text-start">
+            <h3 class="mb-5">Instrucciones</h3>
+            <ol>
+                <li class="my-4"><strong>Instalar Forge 1.18.2:</strong>
+                    <ol>
+                        <li>Descarga el instalador de Forge para la versión 1.18.2 desde el sitio oficial de <a
+                                href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.18.2-40.2.21/forge-1.18.2-40.2.21-installer.jar"
+                                target="_blank">Forge</a>.</li>
+                        <li>Ejecuta el archivo descargado y selecciona la opción de instalar cliente.</li>
+                        <li>Abre el **Minecraft Launcher oficial**, selecciona el perfil de Forge y haz clic en
+                            "Jugar" para que se
+                            creen las carpetas necesarias.</li>
+                    </ol>
+                </li>
+                <li class="my-4"><strong>Descargar e instalar los mods:</strong>
+                    <ol>
+                        <li>Haz clic <a href="../files/mods.zip" target="_blank">aquí</a> para descargar
+                            el paquete de
+                            mods que utilizarás.</li>
+                        <li>Ve a la carpeta de Minecraft. Puedes encontrarla fácilmente haciendo lo siguiente:
+                            <ul>
+                                <li>En Windows: Presiona <strong>Windows + R</strong> y escribe
+                                    <code>%appdata%\.minecraft</code>,
+                                    luego presiona Enter.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Abre la carpeta llamada <strong>mods</strong>. Si no existe, crea una nueva carpeta con
+                            el nombre
+                            <code>mods</code>.
+                        </li>
+                        <li>Copia los archivos <strong>.jar</strong> de los mods que descargaste y pégalos en la
+                            carpeta
+                            <strong>mods</strong>.
+                        </li>
+                    </ol>
+                </li>
+                <li class="my-4"><strong>Iniciar Minecraft con Forge:</strong>
+                    <ol>
+                        <li>Abre el **Minecraft Launcher oficial**.</li>
+                        <li>Selecciona el perfil de **Forge** y haz clic en **Jugar**.</li>
+                        <li>Ve a la opción de **Multijugador** y utiliza la siguiente dirección para conectarte al
+                            servidor:
+                            <code id="copiar">teamshadows.exaroton.me:52436</code>
+                            <p class="d-none">teamshadows.exaroton.me:52436</p>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section-title">
+            <h2>Links</h2>
+        </div>
+        <div class="p-5 text-start">
+            <table class="table table-bordered table-dark">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Enlace</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Minecraft</td>
+                        <td><a href="https://www.minecraft.net/es-es/" target="_blank">Minecraft</a></td>
+                    </tr>
+                    <tr>
+                        <td>Forge</td>
+                        <td><a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.18.2-40.2.21/forge-1.18.2-40.2.21-installer.jar" target="_blank">Forge</a></td>
+                    </tr>
+                    <tr>
+                        <td>Modpack</td>
+                        <td><a href="../files/mods.zip" target="_blank">Modpack</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="mt-5 bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Team Shadows. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function copyToClipboard() {
+            var text = document.getElementById("copiar").innerText;
+
+            navigator.clipboard.writeText(text).then(function () {
+                Swal.fire({
+                    icon: 'success',
+                    title: '¡Dirección copiada!',
+                    text: text,
+                    confirmButtonText: 'Aceptar'
+                });
+            }).catch(function (err) {
+                console.error("Error al copiar el texto: ", err);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error',
+                    text: 'No se pudo copiar el texto.',
+                    confirmButtonText: 'Aceptar'
+                });
+            });
+        }
+    </script>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
