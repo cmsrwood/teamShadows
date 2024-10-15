@@ -1,0 +1,78 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+@property --angle{
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+.bodyJota{
+    background: conic-gradient(from var(--angle), rgb(0, 0, 0), rgb(99, 99, 99), rgb(0, 0, 0));
+    animation: 10s spin infinite linear;
+}
+@keyframes spin {
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+.navbar-dark .navbar-brand {
+    color: #ffffff;
+}
+
+.hero-section {
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.section-title {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.team-logo {
+    width: 200px;
+    height: auto;
+}
+
+.boton-imagen {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.boton-imagen img {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.boton-imagen:hover img {
+    transform: scale(1.1);
+}
+.video-container {
+    columns: 3 300px;
+    column-gap: 1em;
+}
+video{
+    display: block;
+    margin-bottom: 1em;
+    width: 100%;
+}
+.description {
+    white-space: pre-line;
+}
