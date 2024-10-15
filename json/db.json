@@ -1,0 +1,49 @@
+{
+    "players": [
+        {
+            "name": "Wood",
+            "role": "IGL",
+            "image": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "Zanahoria",
+            "role": "Capitan - Duelista - Picha loca",
+            "image": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "JohnnyZ",
+            "role": "Ex jugador de SEN",
+            "image": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "Brax",
+            "role": "Main chamber",
+            "image": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "Andamio",
+            "role": "Andamio",
+            "image": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "Sex",
+            "role": "El más cachondo del team",
+            "image": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "Via lactea",
+            "role": "Peruano",
+            "image": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "Jota",
+            "role": "Viene y va",
+            "image": "https://via.placeholder.com/150"
+        },
+        {
+            "name": "Tocino",
+            "role": "(Nunca juega)",
+            "image": "https://via.placeholder.com/150"
+        }
+    ]
+}
