@@ -76,3 +76,12 @@ video{
 .description {
     white-space: pre-line;
 }
+
+.pfp-wonder {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
